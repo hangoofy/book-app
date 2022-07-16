@@ -8,6 +8,7 @@ import Foundation
 // UUID makes sure that every instance of this class (aka object) is unique
 class Book: Identifiable, Decodable {
     var id: Int
+    var image:String
     var title:String
     var author:String
     var isFavourite:Bool
