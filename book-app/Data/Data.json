@@ -73,7 +73,7 @@
     },
     {
         "title": "Text and More",
-        "image": "cover5",
+        "image": "cover3",
         "author": "Sir Vey Sample",
         "isFavourite": false,
         "currentPage": 0,
@@ -109,7 +109,7 @@
     },
     {
         "title": "Characters, Words, and Paragraphs",
-        "image": "cover3",
+        "image": "cover4",
         "author": "Sir Cull K",
         "isFavourite": false,
         "rating": 2,
@@ -145,7 +145,7 @@
     },
     {
         "title": "A Book, I Think",
-        "image": "cover4",
+        "image": "cover5",
         "author": "Sir Vivor Island",
         "isFavourite": false,
         "currentPage": 0,

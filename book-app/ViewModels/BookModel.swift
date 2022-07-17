@@ -20,4 +20,24 @@ class BookModel:ObservableObject {
         // we can call it like this because we put static in front of Data Service's method
         self.books = DataService.getLocalData()
     }
+    
+    // 1. for updating favorites star icon depending on whether we click it or not
+    func updateFavorite(targetId: Int) {
+        // .toggle() turns T into F or F into T
+        // think of $0 as the first argument in the array that satisfies a specific criteria
+        // all isFavorites are false by default
+        if let index = books.firstIndex(where: { $0.id == targetId }) {
+            books[index].isFavourite.toggle()
+        }
+    }
+    
+    // 2. update rating when different picker is selected for the book (check in BookCard view)
+    func updateRating(targetId: Int, targetRating: Int) {
+        // if .firstIndex method doesn't find the index, then it returns nil
+        // this translates into: find first index where id of any element in the array is equal to the specifid target id in the function parameter
+        if let index = books.firstIndex(where: { $0.id == targetId }) {
+            books[index].rating = targetRating
+        }
+    }
+    
 }
